@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>software libaoo</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"> <a href="https://i.pinimg.com/564x/34/f2/2a/34f22a471c4a2f7f78583f337d0d46b6.jpg">LIBAOO!</p>
+            <nav>
+                <a href="#somos-proya">Quienes Somos</a>
+                <a href="#nuestros-programas">Sobre nosotros</a>
+                <a href="#caracteristicas">¿Por que nosotros?</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Practica tu lectura con nosotros </h1>
+        <button class="btn-abrir">INICIAR SESION</button>
+         <div class="pop-up">
+         <div class="pop-up-wrap">
+            <div class="pop-up-title">
+                <h2>LIBAOO</h2>
+                <p>Promovemos la buena pratica de la lectura</p>
+            </div>
+            <div class="subcription">
+                <div class="line"></div>
+                <i class="far fa-times-circle" id="close"></i>
+                <div class="sub-content">
+                    <h2>INICIAR SESION</h2>
+                    <p>INGRESE LA SIGUIENTE INFORMACION.</p>
+                    <form  action="login_registrar.php" name="" method="POST">
+                        <input type="text" class="subs-email" placeholder=" &#129412;Escribe nombre de usuario" name="nombre_usuario"required>
+                        <input type="password" class="subs-email" placeholder="Escribe tu contraseña" name="contraseña" required>
+                        <button class="subs-send" type="submit" name="btniniciar">Iniciar</button>
+                        <a href="#final">REGISTRARME AHORA</a>
+                    </form>
+                </div>
+                
+                <div class="line"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Somos <span class="color-acento">LIBAOO!</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Nuestros temas a tratar</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>¿Qué es la compresión lectora en niños?</h3>
+                    <p>A partir de las  primeras etapas en el ambito  educativo, el cual empieza generalmente dese los 6 o 7 años. A los niños se les prepara para aprender a leer y escribir, por medio de cuentos o libros infantiles.</p>
+                    <p> A una  corta un niño debe empezar a perfeccionar su capacidad de lectura e ir ganando destreza y rapidez en la adquisición de conceptos favorables para su vida, además de poder entender lo que ha leído y sacar sus propias conclusiones.
+         </p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>¿Importancia de la comprension lectora?</h3>
+                    <p>Para entender correctamente el contenido de una lectura, se debe tener un buen uso de la entonación, identificar características del texto y procesar la información, por ende, si no se tiene el manejo de estas características será muy difícil entender el aprendizaje de la lectura.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>¿Cómo desarrollar la compresión por medio de actividades?</h3>
+                    <p>Una vez aclarado el concepto de que es la compresión lectora en niños, continuamos con el paso del desarrollo en compresión lectora, algunos de los métodos.</p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+           <div class="texto">
+                <h3>MISION </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+                <h3>VISON</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Listos para aprender?</h2>
+        <button id="abrir_modal">REGISTRARME</button>
+        <div id="miModal" class="modal">
+        <div class="flex" id="flex">
+            <div class="contenido-modal">   
+                <div class="modal-header flex">
+                    <h2 class="title-modal-registro">REGISTRATE</h2>
+                    <span class="close" id="close_modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                     <form  action="registrar.php" name="" method="POST">
+                         <div class="inputs-modal-form">
+                             <input type="text" class="subs-email-1" placeholder="Nombre" name="nombre" required>
+                              <input type="text" class="subs-email-1" placeholder="Apellidos" name="apellidos" required>
+                              <input type="text" class="subs-email-1" placeholder="Escribe nombre de usuario" name="nombre_usuario" required>
+                              <input type="email" class="subs-email-1" placeholder="Correo electronico" name="email" required>
+                              <input type="password" class="subs-email-1" placeholder="Escribe tu contraseña" name="contraseña" required>
+                              <input type="password" class="subs-email-1" placeholder="Confirmar contraseña" name="contraseña" required>
+                              <input type="text" list="items" class="subs-email-1" placeholder="Seleccione grado" name="grado" required>
+                              <datalist id="items">
+                                <option >Primero</option>
+                                <option >Segundo</option>
+                                <option>Tercero</option>
+                                <option>Cuarto</option>
+                                <option>Quinto</option>
+                              </datalist>
+                         </div>
+                              <button class="subs-send-1" type="submit" name="enviar">ENVIAR</button>
+           </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><b>LIBAOO</b> - Todos los Derechos Reservados-2022</p>
+        </div>
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="modal.js"></script>
+    <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
+</body>
+</html>
