@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Cuentos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="p-4 lg:p-6">
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+        <div class="space-y-3">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Bienvenido a la Biblioteca de Cuentos
+          </h2>
+          <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Disfruta de una amplia selección de cuentos para niños. ¡Guarda tus favoritos con un solo clic!
+          </p>
+        </div>
+        <div class="divide-y rounded-lg border">
+          <!-- Aquí se encuentran las imágenes de los libros -->
+        </div>
+        <div class="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+          <!-- Botón "Agregar a Favoritos" -->
+          <button class="btn">Agregar a Favoritos</button>
+          <a class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300" href="#" rel="ugc">
+            Contactar
+          </a>
+          <a class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300" href="#" rel="ugc">
+            Más información
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+<style>
+  .btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+</style>
+</body>
+</html>
