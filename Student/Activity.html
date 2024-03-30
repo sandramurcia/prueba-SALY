@@ -14,7 +14,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zap/1.6.1/zap.min.js"></script>
 	<!--js-->
 	<script src="js/main.js"></script>
-
 </head>
 <body>
 <div class="navbar-lateral full-reset">
@@ -37,14 +36,13 @@
     <li>
         <div class="dropdown-menu-button"><i class="zmdi zmdi-email-open zmdi-hc-fw"></i>&nbsp;&nbsp;Actividades</div>
         <ul class="list-unstyled">
-            <li><a href=""><i class="zmdi zmdi-check-circle"></i>&nbsp;&nbsp;Hecho</a></li>
-            <li><a href=""><i class="zmdi zmdi-star-half"></i>&nbsp;&nbsp;Por hacer</a></li>
-            <li><a href=""><i class="zmdi zmdi-pin-off"></i>&nbsp;&nbsp;Sin hacer</a></li>
+            <li><a href="Activity.html"><i class="zmdi zmdi-check-circle"></i>&nbsp;&nbsp;Hecho</a></li>
+            <li><a href="Activity.html"><i class="zmdi zmdi-star-half"></i>&nbsp;&nbsp;Por hacer</a></li>
         </ul>
     </li>
-    <li><a href=""><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp;Mi progreso</a></li>
-    <li><a href=""><i class="zmdi zmdi-wrench zmdi-hc-fw"></i>&nbsp;&nbsp;Configuración</a></li>
-    <li><a href=""><i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Ayuda</a></li>
+    <li><a href="student-logros.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp;Mi progreso</a></li>
+    <li><a href="student-confi.html"><i class="zmdi zmdi-wrench zmdi-hc-fw"></i>&nbsp;&nbsp;Configuración</a></li>
+    <li><a href="student-help.html"><i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Ayuda</a></li>
 
 </ul>
 </div>
@@ -54,18 +52,19 @@
 <div class="content-page-container full-reset custom-scroll-containers">  
 <nav class="navbar-user-top full-reset">
     <ul class="list-unstyled full-reset">
-    <figure>
-        <img src="img/user.png" alt="Imagen usuario" class="img-responsive img-circle center-box">
-    </figure>
+     <figure>
+         <img id="avatarMain" src="img/user01.png" alt="avatar" class="rounded-circle img-fluid">
+     </figure>
     <li>
-    <a href="perfil.html" style="color:#fff; cursor:pointer;">
+    <a href="student-confi.html" style="color:#fff; cursor:pointer;">
         <span class="all-titles">Mi Perfil</span>
     </a>
     </li>
-	<li class="tooltips-general exit-system-button" data-href="index.html" data-placement="bottom" title="Salir del sistema"><i class="zmdi zmdi-power"></i>
+    <li class="tooltips-general exit-system-button" data-href="index.html" data-placement="bottom" title="Salir del sistema"><i class="zmdi zmdi-power"></i>
     </li>
     </ul>
 </nav>
+
 <!-- Popup para confirmar la salida del sistema -->
 <div id="popup-confirm" class="popup">
     <div class="popup-content">
@@ -77,58 +76,94 @@
 <!---->
     <div class="container">
         <div class="page-header">
-            <h1 class="all-titles">SALY LEARNING <small>Inicio</small></h1>
+            <h1 class="all-titles">SALY LEARNING <small>Actividades</small></h1>
         </div>
     </div>
    
-<section class="card-section text-center" id="contenido" style="padding: 40px 0;">
-        <!--<div class="container-fluid">
-    <ul class="nav nav-tabs custom-tabs" style="font-size: 17px;">
-        <li class="active"><a href="book-student.html">Explorar libros</a></li>
-        <li ><a href="favoritebok.html">Libros Favoritos</a></li>
+<section class="card-section text-center" id="contenido">
+  <div class="container-fluid">
+    <ul class="nav nav-tabs custom-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#por-hacer">Por hacer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#hecho">Hecho</a>
+      </li>
     </ul>
-   </div>-->
-</section>
-<section id="contenido">
-<div class="container-fluid">
-<div class="container-fluid" >
-<div class="row">
-<div class="container-fluid">
-       <div id="contenido1" style="display:none;">
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFyL7BxLac&#x2F;uDlt9O3bX-8pazs00AGf-A&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFyL7BxLac&#x2F;uDlt9O3bX-8pazs00AGf-A&#x2F;view?utm_content=DAFyL7BxLac&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a> 
-<a href=""><i class="zmdi zmdi-favorite"></i>&nbsp;&nbsp; Favoritos</a>
+    <div class="tab-content">
+      <div id="por-hacer" class="tab-pane fade show active">
+        <!-- Contenido de "Por hacer" -->
+        <h2>Actividades por hacer</h2>
+        <p>¡Aquí encontrarás un montón de actividades divertidas para realizar!</p>
+ <div class="row">
+    <div class="col-md-4">
+        <div class="activity-card por-hacer" id="actividad1">
+            <h5>¿Cuál es el nombre del protagonista del libro "Charlie y la fábrica de chocolate" de Roald Dahl?</h5>
+            <p>
+                <input type="radio" id="pregunta1-opcion1" name="pregunta1" value="Charlie Bucket" onchange="checkSelection('actividad1')">
+                <label for="pregunta1-opcion1">Charlie Bucket</label><br>
+                <input type="radio" id="pregunta1-opcion2" name="pregunta1" value="Willy Wonka" onchange="checkSelection('actividad1')">
+                <label for="pregunta1-opcion2">Willy Wonka</label><br>
+                <input type="radio" id="pregunta1-opcion3" name="pregunta1" value="Matilda Wormwood" onchange="checkSelection('actividad1')">
+                <label for="pregunta1-opcion3">Matilda Wormwood</label><br>
+                <input type="radio" id="pregunta1-opcion4" name="pregunta1" value="Harry Potter" onchange="checkSelection('actividad1')">
+                <label for="pregunta1-opcion4">Harry Potter</label>
+            </p>
+            <button class="question-button" id="button_actividad1" disabled onclick="enviarRespuesta('actividad1')">enviar</button>
 
-    <div id="contenido2" style="display:none;">
-      <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFw9HiLYXg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="activity-card por-hacer" id="actividad2">
+            <h5>En el cuento clásico "La Cenicienta", ¿qué animal ayuda a Cenicienta a llegar al baile?</h5>
+            <p>
+                <input type="radio" id="pregunta2-opcion1" name="pregunta2" value="Un hada madrina" onchange="checkSelection('actividad2')">
+                <label for="pregunta2-opcion1">Un hada madrina</label><br>
+                <input type="radio" id="pregunta2-opcion2" name="pregunta2" value="Un ratón" onchange="checkSelection('actividad2')">
+                <label for="pregunta2-opcion2">Un ratón</label><br>
+                <input type="radio" id="pregunta2-opcion3" name="pregunta2" value="Un pájaro" onchange="checkSelection('actividad2')">
+                <label for="pregunta2-opcion3">Un pájaro</label><br>
+                <input type="radio" id="pregunta2-opcion4" name="pregunta2" value="Un gato" onchange="checkSelection('actividad2')">
+                <label for="pregunta2-opcion4">Un gato</label>
+            </p>
+            <button class="question-button" id="button_actividad2" disabled onclick="enviarRespuesta('actividad2')">enviar</button>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="activity-card por-hacer" id="actividad3">
+            <h5>¿Cuál es el nombre del protagonista del libro "El principito" de Antoine de Saint-Exupéry?</h5>
+            <p>
+                <input type="radio" id="pregunta3-opcion1" name="pregunta3" value="Peter Pan" onchange="checkSelection('actividad3')">
+                <label for="pregunta3-opcion1">Peter Pan</label><br>
+                <input type="radio" id="pregunta3-opcion2" name="pregunta3" value="El Principito" onchange="checkSelection('actividad3')">
+                <label for="pregunta3-opcion2">El Principito</label><br>
+                <input type="radio" id="pregunta3-opcion3" name="pregunta3" value="Aladino" onchange="checkSelection('actividad3')">
+                <label for="pregunta3-opcion3">Aladino</label><br>
+                <input type="radio" id="pregunta3-opcion4" name="pregunta3" value="Mowgli" onchange="checkSelection('actividad3')">
+                <label for="pregunta3-opcion4">Mowgli</label>
+            </p>
+           <button class="question-button" id="button_actividad3" disabled onclick="enviarRespuesta('actividad3')">enviar</button>
+        </div>
+    </div>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFw9HiLYXg&#x2F;view?utm_content=DAFw9HiLYXg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">soñemos juntos</a> de sandra murcia gonzales
+</div>
+<div id="sin-preguntas" style="display: none;">
+   <img src="img/Terminaste.gif" class="img-finish" alt="estas al dia">
+</div>
 
+      <div id="hecho" class="tab-pane fade">
+        <!-- Contenido de "Hecho" -->
+        <h2>Actividades hechas</h2>
+        <p>¡Felicidades por completar estas actividades!</p>
+        <div class="row">
+          <!-- Tarjetas de actividades hechas aquí -->
+        </div>
+      </div>
     </div>
-    <div id="contenido3" style="display:none;">
-       <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqt1Tp73o&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqt1Tp73o&#x2F;watch?utm_content=DAFqt1Tp73o&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">EL ELEFANTE BERNARDO</a> de sandra murcia gonzales
-    </div>
-</div>
-</div>
+  </div>
 </section>
+
+
 <footer class="footer full-reset">
 <div class="container-fluid">
     <div class="row">
@@ -150,6 +185,5 @@
 <div class="footer-copyright full-reset all-tittles">SALY &copy; Todos los Derechos Reservados-2023</div>
 </footer>
 </div>
-
 </body>
 </html>
